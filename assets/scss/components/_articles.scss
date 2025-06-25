@@ -1,0 +1,110 @@
+@use '../utils/variables' as *;
+
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $card-gap;
+  max-width: 1200px;
+  margin: 60px auto;
+  width: 100%;
+  background-color: $color-bg;
+  padding: $card-padding;
+
+  @media (max-width: 1279px) {
+    grid-template-columns: 1fr;
+    max-width: 767px;
+  }
+
+  @media (max-width: 767px) {
+    padding: $card-gap / 2;
+  }
+}
+
+.article-card {
+  display: flex;
+  gap: $card-gap / 2;
+  border-radius: $card-radius;
+
+  &__cover-wrap {
+    flex: 0 0 $cover-width;
+  }
+
+  &__cover {
+    width: 100%;
+    height: $cover-height;
+    object-fit: cover;
+    border-radius: $cover-radius;
+    box-shadow: $cover-shadow;
+    transition: transform 0.3s ease;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  &__category {
+    font-size: $category-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  &__title {
+    font-size: $title-font-size;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+    color: $color-primary;
+  }
+
+  &__description {
+    font-size: $desc-font-size;
+    line-height: 1.5;
+    color: $color-secondary;
+    margin: 10px 0;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__author-photo {
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__author-name {
+    font-size: $author-font-size;
+    font-weight: 600;
+    color: $color-primary;
+  }
+
+  &__publish-date {
+    font-size: $date-font-size;
+    color: $color-secondary;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: $card-gap / 2;
+    
+    &__cover-wrap {
+      flex: 1;
+    }
+  }
+}

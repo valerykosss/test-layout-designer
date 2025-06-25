@@ -1,0 +1,41 @@
+/*select*/
+$color-primary: #2a2a2a !default;
+$color-secondary: #707070 !default;
+$color-error: #ff0000 !default;
+$color-border: #d8d8d8 !default;
+$color-hover: #e8e8e8 !default;
+$color-white: #ffffff !default;
+
+$select-border-radius: 8px !default;
+$search-icon-size: 16px !default;
+$dropdown-max-height: 400px !default;
+
+$output-padding: 16px !default;
+$search-wrapper-margin: 16px 8px 8px !default;
+$search-wrapper-padding: 8px 10px !default;
+$search-input-padding: 8px 10px 8px 34px !default;
+$search-input-margin: 16px 8px !default;
+$option-padding: 8px 16px !default;
+$icon-position: 16px !default;
+
+$focus-shadow: 0 0 0 1px rgba($color-secondary, 0.3) !default;
+$hover-transition: background 0.2s ease !default;
+
+/*article*/
+$color-bg: #f3f3f3 !default;
+$color-card-shadow: rgba(0, 0, 0, 0.1) !default;
+
+$card-gap: 40px !default;
+$card-radius: 20px !default;
+$card-padding: 60px !default;
+$cover-width: 250px !default;
+$cover-height: 300px !default;
+$cover-radius: 10px !default;
+$cover-shadow: 0 3px 10px $color-card-shadow !default;
+$avatar-size: 50px !default;
+
+$category-font-size: 12px !default;
+$title-font-size: 18px !default;
+$desc-font-size: 14px !default;
+$author-font-size: 14px !default;
+$date-font-size: 12px !default;

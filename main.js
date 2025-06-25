@@ -4,3 +4,4 @@ import './assets/components'
 import './style.css'
 import './scripts'
 import './assets/AttForm'
+import './assets/scss/main.scss';
